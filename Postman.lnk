@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "ec18ded1-71eb-4ada-ba3e-cf0201b0a34a",
+		"name": "RegistrationAppAtos-AF",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3419830"
+	},
+	"item": [
+		{
+			"name": "Get all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/afUser/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"afUser",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/afUser/users/62",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"afUser",
+						"users",
+						"62"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new user",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"dateOfBirth\": \"2001-10-10\",\r\n        \"country\": \"FRANCE\",\r\n        \"phoneNumber\": \"0101010101\",\r\n        \"gender\": \"Male\",\r\n        \"userName\": \"User1\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/afUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"afUser"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
