@@ -1,5 +1,5 @@
 # UserRegistration-AF
-User registration API develop with Spring Boot
+User registration API developed with Spring Boot
 
 ### General Info 
 
